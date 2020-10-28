@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+header.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+header.header .logo img
+{
+    width: 100px;
+}
+
+header.header ul
+{    
+    margin-left: 60px;
+}
+
+header.header ul a
+{
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* landing-page et top page*/
+
+section.top-page
+{
+    background-color: black;
+    height: 80vh;
+    padding: 25px;
+}
+
+div.info
+{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+div.info .ciceron-img 
+{
+    width: 400px;
+}
+
+section.top-page .landing-page 
+{
+    color: white;
+    padding: 100px;
+}
+
+section.top-page .landing-page h1 
+{
+    font-size: 70px;
+}
+
+section.top-page .landing-page p
+{
+    max-width: 700px;
+    font-size: 20px;
+}
+
+section.top-page .landing-page div
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fff;
+    margin-top: 30px;
+    min-height: 50px;
+    display: flex;
+    width: 150px;
+}
+
+section.top-page .landing-page div a
+{
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+/* Cartes */
+
+section.cards-container
+{
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.cards-container .cards 
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+
+.cards-container .cards:hover 
+{
+    height: 360px;
+}
+
+.cards-container .cards .imgBox 
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 5px;
+    z-index: 1;
+}
+
+.cards-container .cards .imgBox img
+{
+    margin-right: 40px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.cards-container .cards .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    opacity: 0;
+    transition: 0.3 ease-in-out;
+    transition-delay: 200ms;
+}
+
+.cards-container .cards:hover .content
+{
+    opacity: 1;
+    margin-top: -120px;    
+}
+
+.i 
+{
+    height: 100vh;
+    width: 100%;
+    background: rosybrown;
+    margin-top: 100px;
+}
+
+.i h1 
+{
+    position: relative;
+    text-align: center;
+    top: 50vh;
+    font-size: 3rem;
+    margin: auto;
+}
+
+/* Footer */
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+footer a 
+{
+    text-decoration: none;
+    color: #111;
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+footer h4
+{
+    font-weight: 550;
+    margin-left: 20px;
+}
+
+/* Média queries (responsive) */
+
+@media (max-width: 1345px)
+{
+    div.info .ciceron-img 
+    {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1090px)
+{
+    section.top-page
+    {
+        background-color: black;
+        height: 100%;
+        padding: 25px;
+    }
+    div.info .ciceron-img 
+    {
+        display: none;
+    }
+    .thirt-card
+    {
+        position: absolute;
+    }
+}
+
+@media (max-width: 790px)
+{
+    div.info
+    {
+        text-align: center;
+    }
+
+    section.top-page .landing-page div
+    {
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 500px) /*Format téléphone*/
+{
+    section.top-page
+    {
+        width: 100vw;
+    }
+}
