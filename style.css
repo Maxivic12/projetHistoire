@@ -53,6 +53,7 @@ div.info
 div.info .ciceron-img 
 {
     width: 400px;
+    margin-left: 50px;
 }
 
 section.top-page .landing-page 
@@ -66,10 +67,16 @@ section.top-page .landing-page h1
     font-size: 70px;
 }
 
-section.top-page .landing-page p
+section.top-page .landing-page p, p a
 {
     max-width: 700px;
     font-size: 20px;
+    text-decoration: none;
+}
+
+section.top-page .landing-page p a
+{
+    color: #471a8b;
 }
 
 section.top-page .landing-page div
@@ -251,3 +258,4 @@ footer h4
         width: 100vw;
     }
 }
+
