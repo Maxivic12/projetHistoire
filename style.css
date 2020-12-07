@@ -67,7 +67,7 @@ section.top-page .landing-page h1
     font-size: 70px;
 }
 
-section.top-page .landing-page p, p a, section.s_1 p, section.s_2 p, section.s_2 ul
+section.top-page .landing-page p, p a, section.s_1 p, section.s_2 p, section.s_2 ul, section.s_3 p, section.s_4 p
 {
     max-width: 700px;
     font-size: 20px;
@@ -173,9 +173,9 @@ section.cards-container
 
 /* COMPARTIMENTS */
 
-/* Section 1 */
+/* Section 1 et 4 */
 
-section.s_1
+section.s_1, section.s_4
 {
     height: 100%;
     width: 100%;
@@ -189,51 +189,81 @@ section.s_1
     padding-bottom: 60px;
 }
 
-section.s_1 h1
+section.s_4
+{
+    margin-top: 0;
+}
+
+section.s_1 h1, section.s_4 h1
 {
     font-size: 60px;
     padding: 60px;
 }
 
-section.s_1 p
+section.s_1 p, section.s_4 p
 {
     width: 900px;
 }
 
-/* Section 2 */
+/* Section 2 et 3 */
 
-section.s_2
+section.s_2, section.s_3
 {
     height: 100%;
     width: 100%;
     margin-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background: #2989C4;
 }
 
-section.s_2 .txt
+section.s_3 
+{
+    background-color: #21AD7A;
+}
+
+section.j
+{
+    background-color: #C5C98E;
+}
+
+section.m
+{
+    background-color: #9b086a;
+}
+
+section.m p 
+{
+    height: 100px;
+}
+
+section.s_2 .txt, section.s_3 .txt
 {
     color: #111;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
-section.s_2 .txt h1
+section.s_2 .txt h1, section.s_3 .txt h1
 {
     font-size: 60px;
+    padding: 60px 0 30px 0;
 }
 
-section.s_2 .section-img
+section.s_2 .txt ul 
 {
-    height: 40vh;
+    padding-left: 100px;
+    margin-top: 40px;
 }
 
-section.s_2 .section-img img
+section.s_2 .section-img, section.s_3 .section-img
+{
+    height: 45vh;
+}
+
+section.s_2 .section-img img, section.s_3 .section-img img
 {
     height: 100%;
 }
@@ -269,7 +299,7 @@ footer h4
     {
         width: 300px;
     }
-    section.s_2 .section-img
+    section.s_2 .section-img, section.s_3 .section-img
     {
         display: none;
     }
