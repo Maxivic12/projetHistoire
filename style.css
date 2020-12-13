@@ -231,11 +231,6 @@ section.m
     background-color: #9b086a;
 }
 
-section.m p 
-{
-    height: 100px;
-}
-
 section.s_2 .txt, section.s_3 .txt
 {
     color: #111;
@@ -256,6 +251,7 @@ section.s_2 .txt ul
 {
     padding-left: 100px;
     margin-top: 40px;
+    text-align: left;
 }
 
 section.s_2 .section-img, section.s_3 .section-img
@@ -266,6 +262,18 @@ section.s_2 .section-img, section.s_3 .section-img
 section.s_2 .section-img img, section.s_3 .section-img img
 {
     height: 100%;
+}
+
+section.m .section-img
+{
+    height: 30vw;
+}
+
+section.s_3, section.s_2
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Footer */
@@ -345,3 +353,15 @@ footer h4
     }
 }
 
+@media (max-width: 1500px) /*Format téléphone*/
+{
+    section .txt p
+    {
+        text-align: center;
+    }
+
+    section.m .section-img
+    {
+        min-height: 425px;
+    }
+}
