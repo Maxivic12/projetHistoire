@@ -376,6 +376,14 @@ footer h4
     }
 }
 
+@media (max-width: 1150px)
+{
+    div.info .ciceron-img 
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 1090px)
 {
     section.top-page
@@ -383,11 +391,6 @@ footer h4
         background-color: black;
         height: 100%;
         padding: 25px;
-    }
-
-    div.info .ciceron-img 
-    {
-        display: none;
     }
     
     .thirt-card
