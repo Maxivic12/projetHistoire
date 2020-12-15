@@ -400,7 +400,7 @@ footer h4
     
     .popup 
     {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
