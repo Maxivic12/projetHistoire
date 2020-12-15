@@ -394,6 +394,11 @@ footer h4
     {
         position: absolute;
     }
+    
+    .popup 
+    {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 790px)
