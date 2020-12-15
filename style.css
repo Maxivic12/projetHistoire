@@ -8,6 +8,62 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Popup */
+
+div#vue
+{
+    display: block;  
+}
+
+#back-popup
+{
+    display: none; 
+    width: 100vw;
+    height: 100vh;
+    background-color: #121758;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup
+{
+    max-width: 600px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txt p
+{
+    margin-top: 40px;
+}
+
+#btn 
+{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: #fff;
+    color:#111;
+    min-height: 50px;
+    display: flex;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
 /* header */
 header.header
 {
@@ -276,6 +332,12 @@ section.s_3, section.s_2
     align-items: center;
 }
 
+
+section.j .section-img
+{
+    height: 50vh;
+}
+
 /* Footer */
 footer 
 {
@@ -307,6 +369,7 @@ footer h4
     {
         width: 300px;
     }
+
     section.s_2 .section-img, section.s_3 .section-img
     {
         display: none;
@@ -321,10 +384,12 @@ footer h4
         height: 100%;
         padding: 25px;
     }
+
     div.info .ciceron-img 
     {
         display: none;
     }
+    
     .thirt-card
     {
         position: absolute;
